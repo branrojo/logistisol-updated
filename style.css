@@ -1,0 +1,262 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #373f55;
+    padding: 40px 0;
+}
+
+.caja{
+    width: 940px;
+    height: 50px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.logo{
+    height: 100px;
+    width: 200px;
+    display: inline;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #ebc882;
+    transition: 0.6s;
+}
+
+.servicios{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.servicios li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5% 40px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid #353232;
+    border-radius: 10px;
+}
+
+.servicios li:hover{
+    border-color:#E0B974;
+}
+
+.servicios li:active{
+    border-color:#088c19;
+}
+
+.servicios h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.servicios li:hover h4{
+    font-size: 28px;
+}
+
+.transporte, .financieros, .inventario, .devolucion, .personalizada, .soporte{
+    width: 150px;
+    height: 150px;
+}
+
+.transporte, .financieros, .devolucion{
+    padding-bottom: 16px;
+}
+
+.servicio-descripcion{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: #373f55;
+    padding:30px;
+}
+
+.contacto{
+    color:#FEFEFE;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.copyright{
+    color:#FEFEFE;
+    font-size: 13px;
+    margin: 5px 20px 20px 20px;
+}
+
+form{
+    margin: 40px 0 40px 50px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #c78c19;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: orange;
+    transform: scale(1.1);
+}
+
+/*Aquí inicia el CSS para nuestra home*/
+body{
+    background: linear-gradient(#FEFEFE, #888888)
+}
+
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto; 
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    clear:left;
+}
+
+.descripcion{
+    font-style: italic;
+    font-size: 20px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.mision, .equipo, .ambiental{
+    margin-top: 30px;
+    width: 80%;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h3{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    clear:left;
+}
+
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px){
+   
+    .principal, .mapa{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        margin-top: 10px;
+    }
+
+    .caja{
+        margin-top: 1px;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .servicios{
+        width: auto;
+    }
+   
+    .transporte, .financieros, .inventario, .devolucion, .personalizada, .soporte{
+        width: 120px;
+        height: 120px;
+    }
+
+    .servicios h4{
+        font-size: 25px;
+    }
+
+    .servicios li{
+        width: auto;
+    }
+
+    .enviar{
+        width: 70%;
+    }
+}
+
